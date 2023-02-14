@@ -1,7 +1,5 @@
 package quicksort
 
-import "fmt"
-
 func partitionAsc(arr []int, left int, right int, pivot int) int {
 	for left <= right {
 		for arr[left] < pivot {
@@ -47,7 +45,6 @@ func partitionDesc(arr []int, left int, right int, pivot int) int {
 			right--
 		}
 	}
-	fmt.Println(arr)
 	return left
 }
 
